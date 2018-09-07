@@ -1,0 +1,27 @@
+{
+  "name": "tune-guitar",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "idyll index.idyll --template=./_index.html --defaultComponents=components/default --css styles.css --theme github --watch",
+    "build": "idyll index.idyll --no-minify=true --template=./_index.html --defaultComponents=components/default --theme github --css styles.css; cp -r {images,data} build/;",
+    "deploy": "npm run build && gh-pages -d ./build"
+  },
+  "dependencies": {
+    "JSONStream": "^1.3.2",
+    "canvas": "^1.6.10",
+    "d3": "^4.0.0",
+    "d3-node": "^1.1.3",
+    "d3-scale": "^2.0.0",
+    "event-stream": "^3.3.4",
+    "firebase": "^4.13.1",
+    "idyll": "^2.11.4",
+    "idyll-d3-component": "^2.0.0",
+    "react-inlinesvg": "^0.8.1",
+    "react-portal": "^4.1.5",
+    "tone": "^0.12.80"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}
