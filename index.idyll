@@ -77,10 +77,6 @@ We've just taken it out of storage and *it's all out of tune...*
 
 [/section]
 
-
-
-
-
 [section onEnterViewFully:`guitarState = 'headstock'; playScale = false;`]
 # Electric Tuner to the Rescue.
 
